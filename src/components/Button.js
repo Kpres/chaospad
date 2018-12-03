@@ -7,16 +7,12 @@ export default class Button extends Component{
         this.state = ({
             x: 0,
             y: 0,
-            key: "Q",
         })
     }
 
-
-
-
     render(){
         return(
-            <div className = "Button">{this.state.key}</div>
+            <div className = "Button">{this.props.name}</div>
         );
     }
 }

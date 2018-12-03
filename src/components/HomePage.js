@@ -8,12 +8,25 @@ export default class HomePage extends Component {
         this.state = ({
             samples: ["Q","W","E","R","A","S","D","F","Z","X","C","V"],
         })
+
+        this.createChaosPad = this.createChaosPad.bind(this);
+    }
+
+    createChaosPad = () => {
+        let pad = [];
+
+        for(var i = 0; i < this.state.samples.length; i++){
+            var keyPut = this.state.samples[i];
+            pad.push(<Button key = {keyPut}></Button>);
+        }
+
+        return pad;
     }
 
     render() {
         return(
             <div className = "backgroundbox">
-                <Button></Button>
+                {this.createChaosPad()}
             </div>
         );
     }
