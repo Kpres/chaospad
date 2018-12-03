@@ -1,0 +1,9 @@
+.backgroundbox{
+    height: 500px;
+    border-radius: 4px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 4% 10% 4% 10%;
+}

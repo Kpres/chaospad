@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
-
+import Button from './Button';
+import "./HomePage.css";
 
 export default class HomePage extends Component {
     constructor(props){
         super(props);
-    }
-
-    makeNoise = () => {
-        //To Be Implemented
+        this.state = ({
+            samples: ["Q","W","E","R","A","S","D","F","Z","X","C","V"],
+        })
     }
 
     render() {
         return(
-            <button className = "btn btn-outline-danger" onClick = {this.makeNoise}>Click Me</button>
+            <div className = "backgroundbox">
+                <Button></Button>
+            </div>
         );
     }
 }
