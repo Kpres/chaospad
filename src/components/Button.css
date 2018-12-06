@@ -1,10 +1,16 @@
 .Button{
+    display: inline-block;
     text-align: center;
     font-size: 150%;
-    height: 17%;
-    width: 12%;
+    height: 25%;
+    width: 19%;
     background:rgba(245, 32, 32, 0.5);    
     border-radius: 4px;
     border: 1px solid rgb(82, 82, 82);
     padding: 2%;
+    margin: 3px;
+}
+.Button:hover{
+    cursor: pointer;
+    background: rgba(245, 32, 32, 0.8); 
 }

@@ -17,7 +17,7 @@ export default class HomePage extends Component {
 
         for(var i = 0; i < this.state.samples.length; i++){
             var keyPut = this.state.samples[i];
-            pad.push(<Button key = {keyPut}></Button>);
+            pad.push(<span><Button name = {keyPut}></Button></span>);
         }
 
         return pad;
